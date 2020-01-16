@@ -261,6 +261,7 @@ fn open_browser_internal(browser: Browser, url: &str) -> Result<ExitStatus> {
 ///    first
 #[cfg(any(
     target_os = "linux",
+    target_os = "android",
     target_os = "freebsd",
     target_os = "netbsd",
     target_os = "openbsd"
@@ -297,6 +298,7 @@ fn open_browser_internal(browser: Browser, url: &str) -> Result<ExitStatus> {
 }
 #[cfg(any(
     target_os = "linux",
+    target_os = "android"
     target_os = "freebsd",
     target_os = "netbsd",
     target_os = "openbsd"
@@ -337,6 +339,7 @@ fn open_on_unix_using_browser_env(url: &str) -> Result<ExitStatus> {
     target_os = "windows",
     target_os = "macos",
     target_os = "linux",
+    target_os = "android",
     target_os = "freebsd",
     target_os = "netbsd",
     target_os = "openbsd"
