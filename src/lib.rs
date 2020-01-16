@@ -298,7 +298,7 @@ fn open_browser_internal(browser: Browser, url: &str) -> Result<ExitStatus> {
 }
 #[cfg(any(
     target_os = "linux",
-    target_os = "android"
+    target_os = "android",
     target_os = "freebsd",
     target_os = "netbsd",
     target_os = "openbsd"
